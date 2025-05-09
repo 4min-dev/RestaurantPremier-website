@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@10/swiper-bundle.min.css" />
+    <title>Restaurant Premier</title>
+</head>
+
+<body id="home__page">
+    <div class="popup__overlay flex column align__end" id="landing__menu__popup__overlay"
+        data-id="landing__popup__menu">
+        <div class="popup landing__popup flex column landing__popup__menu">
+
+            <span class="landing__popup__title flex justify__space__between align__center">
+                <a href="#" class="active">О нас</a>
+
+                <button type="button" class="close__popup__button close__landing__popup__button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                        <path d="M14 14L34 34M14 34L34 14" stroke="#222222" stroke-width="3.2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </span>
+
+            <ul class="landing__popup__content flex column">
+                <li>
+                    <a href="#">
+                        Галерея
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        Кейтеринг
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        Конференции
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        Банкетное меню
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        Заказать доставку
+                    </a>
+                </li>
+
+                <li class="not__link flex column">
+                    <span class="block__title text__uppercase">Локация</span>
+                    <span class="location__popup__value">
+                        КУРСК, АЛЕКСАНДРА НЕВСКОГО 23А
+                    </span>
+                </li>
+
+                <li class="not__link flex column">
+                    <span class="block__title text__uppercase">Локация</span>
+                    <span class="contacts__popup__container flex align__center">
+                        <span class="contacts__popup__name">
+                            Телефон: &nbsp;
+                        </span> <span class="contacts__popup__value">+7 4712 54 20 54</span>
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <header class="landing__header flex justify__space__between align__center">
+        <div class="header__geo__container flex column desktop">
+            <span class="header__geo button">г. Курск, ул. Невского 23А</span>
+            <a href="tel:" class="header__phone__number button">+7 (4712) 54 20 54</a>
+        </div>
+
+        <a href="#" class="header__logo">
+            <img src="/static/img/website__header__logo.png" alt="Header website logo" />
+        </a>
+
+        <div class="header__ui__container flex align__center">
+            <a href="#"
+                class="desktop reserve__header__button theme__button theme__white__bttn animate__bttn text__uppercase button">
+                забронировать столик
+            </a>
+
+            <button type="button" data-popup-id="landing__popup__menu" class="header__burger__menu__bttn get__popup__button theme__white__bttn theme__button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                    <path d="M4.5 25.5H27.5M4.5 16H27.5M4.5 6.5H27.5" stroke="white" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <section id="started__section">
+        <div class="started__section__landing__text flex column align__center">
+            <span class="landing__title text__uppercase text__center">
+                <h1>
+                    <span class="desktop">в этом месте встречаются гастрономия и стиль</span>
+                    <span class="adaptive">здесь встречаются гастрономия и стиль</span>
+                </h1>
+            </span>
+
+            <span class="landing__description big__text text__center">
+                <span class="desktop">
+                    Премьер — это ресторан, объединяющий кухни разных стран мира. Здесь классические рецепты
+                    дополняются
+                    современными идеями, создавая яркие и запоминающиеся вкусы.
+                </span>
+
+                <span class="adaptive">
+                    Ресторан, объединяющий кухни разных стран мира. Здесь классические рецепты дополняются
+                    современными идеями, создавая яркие и запоминающиеся вкусы.
+                </span>
+            </span>
+
+            <a href="#" class="adaptive reserve__button theme__button theme__white__bttn text__uppercase button">
+                забронировать столик
+            </a>
+        </div>
+
+        <div class="started__section__about__scroll">
+            <a href="#" class="button text__uppercase">
+                <span class="desktop">прокрутите, чтобы узнать больше</span>
+                <span class="adaptive">скролльте вниз</span>
+            </a>
+        </div>
+    </section>
+
+    <main>
+        <section id="banquets__section">
+            <div class="banquets__first__block flex justify__space__between align__center">
+                <div class="banquets__about flex column">
+                    <div class="about__banquets__title flex column">
+                        <span class="link text__uppercase">
+                            О банкетах
+                        </span>
+
+                        <span class="text__uppercase block__title">
+                            банкеты
+                        </span>
+                    </div>
+
+                    <div class="about__banquets__description flex column">
+                        <span class="text">
+                            В ресторане «Премьер» банкет превращается в настоящее событие.
+                        </span>
+
+                        <span class="text">
+                            Тут , где каждое мгновение наполнено атмосферой торжества. Разнообразие блюд из лучших
+                            кулинарных традиций мира, утончённая подача и безупречный сервис делают ваш праздник
+                            по-настоящему незабываемым.
+                        </span>
+                    </div>
+                </div>
+
+                <div class="banquets__section__first__block__first__image">
+                    <img src="/static/img/banquets__first__block__first__image.png" alt="Banquets first image" />
+                </div>
+            </div>
+
+            <div class="banquets__section__first__block__second__image">
+                <img src="/static/img/banquets__first__block__second__image.png" alt="Banquets second image" />
+            </div>
+
+            <div class="banquets__about__menu__block">
+                <div class="banquets__about__menu__block__first__image">
+                    <img src="/static/img/banquets__about__menu__block__first__image.png"
+                        alt="Banquets menu first image" />
+                </div>
+
+                <div class="banquets__about__menu__ui__container flex column align__center" id="banquets__about__section">
+                    <div class="banquets__about__menu__text__container flex column align__center">
+                        <div class="banquets__about__menu__title__container flex column align__center">
+                            <div class="website__logo">
+                                <img src="/static/img/website__header__logo__black.png" alt="Header website logo" />
+                            </div>
+
+                            <span class="block__title text__uppercase">
+                                <span class="desktop">
+                                    банкеты
+                                </span>
+
+                                <span class="adaptive">
+                                    наше меню
+                                </span>
+                            </span>
+                        </div>
+
+                        <div class="banquets__about__menu__description__container text__center">
+                            <span class="text">
+                                Фирменные блюда «Премьера», такие как стейк рибай, томлёные ребра BBQ и нежный лосось
+                                терияки, создают идеальное сочетание вкуса и подачи.
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="banquets__about__tags__container flex align__center flex__wrap">
+                        <span
+                            class="theme__button theme__black__bttn button text__uppercase  align__center justify__center">
+                            Завтраки
+                        </span>
+
+                        <span
+                            class="theme__button theme__black__bttn button text__uppercase  align__center justify__center">
+                            Обеды
+                        </span>
+
+                        <span
+                            class="theme__button theme__black__bttn button text__uppercase  align__center justify__center">
+                            барная карта
+                        </span>
+
+                        <span
+                            class="theme__button theme__black__bttn button text__uppercase  align__center justify__center">
+                            банкетное меню
+                        </span>
+                    </div>
+
+                    <a href="#" class="banquets__section__link animate__link flex align__center button text__uppercase">
+                        забронировать столик <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 9" fill="none"
+                            preserveAspectRatio="none">
+                            <path
+                                d="M0 3.93145H14.8949L11.8855 0.922094L12.6894 0.11816L17.0713 4.5L12.6894 8.88184L11.8855 8.0779L14.8949 5.06855H0V3.93145Z"
+                                fill="black" />
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="banquets__about__menu__block__second__image">
+                    <img src="/static/img/banquets__about__menu__block__second__image.png"
+                        alt="Banquets menu second image" />
+                </div>
+            </div>
+        </section>
+
+        <section id="chief__section">
+            <div class="chief__section__ui__container flex justify__space__between align__center">
+                <div class="chief__section__text__container flex column">
+                    <div class="chief__section__title flex column">
+                        <span class="link text__uppercase">
+                            <span class="desktop">слово шеф повара</span>
+                            <span class="adaptive">слово шефа</span>
+                        </span>
+                        <span class="block__title text__uppercase">Виктор викторов</span>
+                    </div>
+
+                    <div class="chief__section__description flex column">
+                        <span class="text">
+                            Вдохновлённый путешествиями и культурным разнообразием, шеф-повар «Премьера» Имя Фамилия
+                            с детства увлекался кулинарией, экспериментируя с рецептами из разных уголков мира.
+                        </span>
+
+                        <span class="text">
+                            Ранее возглавлявший команды лучших ресторанов Москвы и Санкт-Петербурга, он сочетает
+                            классические техники с современными трендами. Михаил считает, что каждое блюдо должно быть
+                            не только вкусным, но и рассказывать свою историю, создавая незабываемые эмоции для гостей.
+                        </span>
+                    </div>
+                </div>
+
+                <div class="chief__section__image__container">
+                    <img src="/static/img/chief.png" alt="Chief" />
+                </div>
+            </div>
+        </section>
+
+        <section id="interior__section">
+            <div class="interior__image__container">
+                <img class="desktop" src="/static/img/interior__1.png" alt="Interior 1" />
+                <img class="adaptive" src="/static/img/interior__1__adaptive.png" alt="Interior 1" />
+            </div>
+        </section>
+
+        <section id="events__section">
+            <div class="event__cards__container flex justify__center">
+                <div class="event__card event__card__1 flex column">
+                    <div class="event__preview__image__container">
+                        <img src="/static/img/event__1.png" alt="Event preview" />
+                    </div>
+
+                    <div class="event__about__text__container flex column">
+                        <span class="event__title block__title text__uppercase">кейтеринг</span>
+                        <span class="event__description text">
+                            Банкеты в «Премьере» — это элегантный зал, изысканное меню и внимательный сервис, создающие
+                            идеальную атмосферу для любого торжества.
+                        </span>
+                    </div>
+
+                    <a href="#" class="events__section__link animate__link flex align__center button text__uppercase">
+                        Подробнее <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 9" fill="none"
+                            preserveAspectRatio="none">
+                            <path
+                                d="M0 3.93145H14.8949L11.8855 0.922094L12.6894 0.11816L17.0713 4.5L12.6894 8.88184L11.8855 8.0779L14.8949 5.06855H0V3.93145Z"
+                                fill="black" />
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="event__card event__card__2 flex column">
+                    <div class="event__preview__image__container">
+                        <img src="/static/img/event__2.png" alt="Event preview" />
+                    </div>
+
+                    <div class="event__about__text__container flex column">
+                        <span class="event__title block__title text__uppercase">праздничные мероприятия</span>
+                        <span class="event__description text">
+                            Кейтеринг от «Премьера» — это возможность насладиться изысканными блюдами ресторана в любом
+                            месте. Мы позаботимся о каждом элементе вашего события — от авторского меню до безупречного
+                            сервиса, создавая атмосферу уюта и элегантности, которая оставит неизгладимое впечатление
+                            на ваших гостей.
+                        </span>
+                    </div>
+
+                    <a href="#" class="events__section__link animate__link flex align__center button text__uppercase">
+                        Подробнее <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 9" fill="none"
+                            preserveAspectRatio="none">
+                            <path
+                                d="M0 3.93145H14.8949L11.8855 0.922094L12.6894 0.11816L17.0713 4.5L12.6894 8.88184L11.8855 8.0779L14.8949 5.06855H0V3.93145Z"
+                                fill="black" />
+                        </svg>
+
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery__section">
+            <div class="gallery__section__title__container flex column align__center text__center">
+                <span class="block__title text__uppercase">
+                    <span class="desktop">
+                        наша галерея
+                    </span>
+
+                    <span class="adaptive">
+                        наша вдохновляющая галерея
+                    </span>
+                </span>
+                <span class="text gallery__section__description desktop">
+                    Мы приглашаем вас посмотреть на некоторые из наших изысканных блюд и почувствовать атмосферу и
+                    элегантность среды, в которой они подаются
+                </span>
+            </div>
+
+            <div class="gallery__swiper__container">
+                <div class="swiper-container">
+                    <div class="gallery__swiper__wrapper flex swiper-wrapper">
+                        <div class="gallery__slide swiper-slide">
+                            <img src="/static/img/gallery__1.png" alt="Gallery image" />
+                        </div>
+
+                        <div class="gallery__slide swiper-slide">
+                            <img src="/static/img/gallery__1.png" alt="Gallery image" />
+                        </div>
+
+                        <div class="gallery__slide swiper-slide">
+                            <img src="/static/img/gallery__1.png" alt="Gallery image" />
+                        </div>
+
+                        <div class="gallery__slide swiper-slide">
+                            <img src="/static/img/gallery__1.png" alt="Gallery image" />
+                        </div>
+
+                        <div class="gallery__slide swiper-slide">
+                            <img src="/static/img/gallery__1.png" alt="Gallery image" />
+                        </div>
+
+                        <div class="gallery__slide swiper-slide">
+                            <img src="/static/img/gallery__1.png" alt="Gallery image" />
+                        </div>
+
+                        <div class="gallery__slide swiper-slide">
+                            <img src="/static/img/gallery__1.png" alt="Gallery image" />
+                        </div>
+
+                        <div class="gallery__slide swiper-slide">
+                            <img src="/static/img/gallery__1.png" alt="Gallery image" />
+                        </div>
+
+                        <div class="gallery__slide swiper-slide">
+                            <img src="/static/img/gallery__1.png" alt="Gallery image" />
+                        </div>
+
+                        <div class="gallery__slide swiper-slide">
+                            <img src="/static/img/gallery__1.png" alt="Gallery image" />
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about__us__section">
+            <div class="about__us__container flex justify__space__between">
+                <div class="first__block__about__us">
+                    <div class="about__us__cards__container flex column">
+                        <div class="about__us__card flex column">
+                            <span class="about__us__title text__uppercase">
+                                <span class="desktop">часы работы и контакты</span>
+                                <span class="adaptive">Часы нашей работы</span>
+                            </span>
+
+                            <div class="about__us__description__container">
+                                <div class="about__us__description__text__container flex align__center">
+                                    <span class="about__us__name">
+                                        <span class="desktop">Будни</span>
+                                        <span class="adaptive">С понедельника по пятницу</span>
+                                    </span>
+                                    &nbsp;
+                                    <span class="about__us__value">
+                                        <span class="desktop">10:00-00:00</span>
+                                        <span class="adaptive">- С 10:00 до 00:00</span>
+                                    </span>
+                                </div>
+
+                                <div class="about__us__description__text__container flex align__center">
+                                    <span class="about__us__name">
+                                        <span class="desktop">Выходные</span>
+                                        <span class="adaptive">В выходные</span>
+                                    </span>
+                                    &nbsp;
+                                    <span class="about__us__value">
+                                        <span class="desktop">12:00-00:00</span>
+                                        <span class="adaptive">- С 12:00 до 00:00</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="about__us__card flex column">
+                            <span class="about__us__title text__uppercase">
+                                дресс код
+                            </span>
+
+                            <div class="about__us__description__container">
+                                <div
+                                    class="about__us__description__text__container dress__code__text__container flex align__center">
+                                    <span class="about__us__name weight__400">
+                                        Свободный, но очень приветствуется классический и неоклассический стили
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="about__us__card flex column">
+                            <span class="about__us__title text__uppercase">
+                                контакты
+                            </span>
+
+                            <div class="about__us__description__container">
+                                <div class="about__us__description__text__container flex align__center">
+                                    <span class="about__us__name">Телефон:</span>
+                                    &nbsp;
+                                    <span class="about__us__value">+7 4712 54 20 54</span>
+                                </div>
+
+                                <div class="about__us__description__text__container flex align__center">
+                                    <span class="about__us__name">Почта:</span>
+                                    &nbsp;
+                                    <span class="about__us__value">primier46@yandex.ru</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="second__block__about__us">
+                    <div class="about__us__cards__container flex column">
+                        <div class="about__us__card flex column">
+                            <span class="about__us__title text__uppercase">
+                                локация
+                            </span>
+
+                            <div class="about__us__description__container">
+                                <div
+                                    class="about__us__description__text__container second__block__description flex align__center">
+                                    <span class="about__us__value text__uppercase">КУРСК, АЛЕКСАНДРА НЕВСКОГО 23А</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="about__us__card flex column">
+                            <span class="about__us__title text__uppercase">
+                                подробности
+                            </span>
+
+                            <div class="about__us__description__container">
+                                <div
+                                    class="about__us__description__text__container dress__code__text__container flex align__center">
+                                    <span class="about__us__name weight__400">
+                                        <span class="desktop">Нашим гостям разрешено находиться в рестране вместе с
+                                            вашими питомцами, и им тоже будет комфортно.</span>
+                                        <span class="adaptive">Совсем свободный, но очень приветствуется классический и
+                                            неоклассический стили</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="about__us__card flex column">
+                            <span class="about__us__title text__uppercase">
+                                <span class="desktop">Связаться с нами</span>
+                                <span class="adaptive">контакты</span>
+                            </span>
+
+                            <div class="about__us__description__container flex column">
+                                <div
+                                    class="about__us__description__text__container second__block__description flex align__center">
+                                    <a href="#" class="about__us__value text__uppercase">instagram</a>
+                                </div>
+
+                                <div
+                                    class="about__us__description__text__container second__block__description flex align__center">
+                                    <a href="#" class="about__us__value text__uppercase">vkontakte</a>
+                                </div>
+
+                                <div
+                                    class="about__us__description__text__container second__block__description flex align__center">
+                                    <a href="#" class="about__us__value text__uppercase">telegram</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <secion id="request__section" class="flex column">
+            <span class="gallery__section__title block__title text__uppercase">
+                оставьте заявку
+            </span>
+
+            <form class="request__form flex column align__center">
+                <div class="inputs__container flex column">
+                    <input required type="text" class="request__input text__only__input" placeholder="Ваше имя" />
+                    <input required type="text" class="request__input phone__number__input"
+                        placeholder="Номер телефона" />
+                    <textarea required class="request__input" placeholder="Комментарий"></textarea>
+                    <input value="Неправильный ввод" readonly type="text" class="error__input" />
+                </div>
+
+                <button type="submit"
+                    class="request__button theme__button theme__black__bttn text__uppercase animate__bttn">
+                    <span class="desktop">оставить заявку</span>
+                    <span class="adaptive">забронировать столик</span>
+                </button>
+            </form>
+        </secion>
+    </main>
+
+    <footer class="landing__footer flex column justify__space__between">
+        <div class="footer__heading flex justify__space__between">
+            <a href="#" class="header__logo">
+                <img src="/static/img/website__header__logo.png" alt="Header website logo" />
+            </a>
+
+            <nav class="footer__navbar">
+                <ul class="footer__navbar__first__block footer__navbar__block flex column">
+                    <li>
+                        <a href="#" class="link text__uppercase">меню</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="link text__uppercase">скидки и акции</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="link text__uppercase">галерея</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="link text__uppercase">кейтеринг</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="link text__uppercase">банкеты</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="link text__uppercase">заказать доставку</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="link text__uppercase">оставить заявку</a>
+                    </li>
+
+                    <li>
+                        <a href="https://techwizards.ru/" class="link text__uppercase flex align__end">tech wizards <svg
+                                xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                fill="none">
+                                <path
+                                    d="M9.16659 3.3335H3.33325V15.0002C3.33325 15.9206 4.07944 16.6668 4.99992 16.6668H14.9999C15.9204 16.6668 16.6666 15.9206 16.6666 15.0002V10.8335"
+                                    stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M7.5 12.5002L16.6667 3.3335" stroke="white" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M12.5 3.3335H16.6667V7.50016" stroke="white" stroke-width="1.2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg></a>
+                    </li>
+                </ul>
+            </nav>
+
+
+            <div class="footer__social__links__container flex desktop">
+                <a href="#" class="footer__social__link telegram__link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                        <g clip-path="url(#clip0_598_3907)">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M16 0C7.164 0 0 7.164 0 16C0 24.836 7.164 32 16 32C24.836 32 32 24.836 32 16C32 7.164 24.836 0 16 0ZM23.416 10.8813C23.176 13.4107 22.1333 19.5507 21.604 22.384C21.38 23.584 20.9373 23.9853 20.5107 24.024C19.5813 24.1093 18.876 23.4093 17.976 22.82C16.568 21.8973 15.772 21.3227 14.4053 20.4213C12.8253 19.38 13.8493 18.808 14.7493 17.8733C14.9853 17.628 19.0787 13.904 19.1587 13.5667C19.168 13.524 19.1787 13.3667 19.084 13.284C18.9893 13.2013 18.852 13.2293 18.7533 13.252C18.612 13.284 16.3627 14.7707 12.004 17.712C11.3653 18.1507 10.7867 18.364 10.268 18.3533C9.69733 18.3413 8.59867 18.0307 7.78133 17.764C6.78 17.4387 5.98267 17.2653 6.052 16.7133C6.088 16.4253 6.484 16.1307 7.24133 15.8293C11.9053 13.7973 15.016 12.4573 16.572 11.8093C21.016 9.96133 21.9387 9.64 22.5413 9.62933C23.296 9.61867 23.4773 10.2413 23.416 10.8813Z"
+                                fill="white" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_598_3907">
+                                <rect width="32" height="32" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </a>
+
+                <a href="#" class="footer__social__link vk__link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                        <g clip-path="url(#clip0_598_3910)">
+                            <path
+                                d="M29.7547 2.24533C27.5093 0 23.8947 0 16.6667 0H15.3333C8.10533 0 4.49067 0 2.24533 2.24533C0 4.49067 0 8.10533 0 15.3333V16.6667C0 23.8947 0 27.508 2.24533 29.7547C4.49067 32.0013 8.10533 32 15.3333 32H16.6667C23.8947 32 27.508 32 29.7547 29.7547C32 27.5093 32 23.8947 32 16.6667V15.3333C32 8.10533 32 4.49067 29.7547 2.24533ZM26.004 22.6667H23.6707C22.7813 22.6667 22.52 21.9573 20.9373 20.3747C19.552 19.04 18.9587 18.8667 18.6133 18.8667C18.1427 18.8667 18.0027 19 18.0027 19.6667V21.7587C18.0027 22.332 17.82 22.6667 16.336 22.6667C13.864 22.6667 11.1467 21.1653 9.21733 18.3973C6.324 14.3427 5.53333 11.2773 5.53333 10.66C5.53333 10.3133 5.66667 10 6.33333 10H8.668C9.264 10 9.488 10.2613 9.712 10.9067C10.8533 14.2307 12.7787 17.136 13.5693 17.136C13.8653 17.136 14.0013 16.9987 14.0013 16.2467V12.8107C13.9147 11.2293 13.0733 11.0987 13.0733 10.536C13.0733 10.276 13.296 10 13.6667 10H17.3347C17.8293 10 18.0013 10.264 18.0013 10.8573V15.48C18.0013 15.9733 18.216 16.1467 18.364 16.1467C18.6613 16.1467 18.908 15.9733 19.452 15.4293C21.1333 13.5507 22.32 10.6587 22.32 10.6587C22.4693 10.312 22.7413 9.99867 23.336 9.99867H25.6693C26.3747 9.99867 26.524 10.3613 26.3747 10.856C26.0773 12.216 23.2347 16.22 23.2347 16.22C22.9867 16.616 22.888 16.8133 23.2347 17.2587C23.4827 17.6053 24.2973 18.2973 24.8413 18.94C25.844 20.068 26.6 21.0187 26.8107 21.6747C27.0053 22.3333 26.6707 22.6667 26.004 22.6667Z"
+                                fill="white" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_598_3910">
+                                <rect width="32" height="32" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </a>
+
+                <a href="#" class="footer__social__link inst__link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                        <rect width="32" height="32" rx="11" fill="white" />
+                        <path
+                            d="M16 2.88267C20.272 2.88267 20.7787 2.89867 22.4653 2.976C24.2093 3.056 26.0053 3.45333 27.276 4.724C28.5587 6.00667 28.944 7.78533 29.024 9.53467C29.1013 11.2213 29.1173 11.728 29.1173 16C29.1173 20.272 29.1013 20.7787 29.024 22.4653C28.9453 24.2 28.5387 26.0133 27.276 27.276C25.9933 28.5587 24.216 28.944 22.4653 29.024C20.7787 29.1013 20.272 29.1173 16 29.1173C11.728 29.1173 11.2213 29.1013 9.53467 29.024C7.81333 28.9453 5.976 28.5293 4.724 27.276C3.448 26 3.056 24.204 2.976 22.4653C2.89867 20.7787 2.88267 20.272 2.88267 16C2.88267 11.728 2.89867 11.2213 2.976 9.53467C3.05467 7.80667 3.46533 5.98267 4.724 4.724C6.004 3.444 7.78933 3.056 9.53467 2.976C11.2213 2.89867 11.728 2.88267 16 2.88267ZM16 0C11.6547 0 11.1093 0.0186667 9.40267 0.096C6.92933 0.209333 4.47333 0.897333 2.68533 2.68533C0.890667 4.48 0.209333 6.93067 0.096 9.40267C0.0186667 11.1093 0 11.6547 0 16C0 20.3453 0.0186667 20.8907 0.096 22.5973C0.209333 25.068 0.9 27.5307 2.68533 29.3147C4.47867 31.108 6.93333 31.7907 9.40267 31.904C11.1093 31.9813 11.6547 32 16 32C20.3453 32 20.8907 31.9813 22.5973 31.904C25.0693 31.7907 27.528 31.1013 29.3147 29.3147C31.1107 27.5187 31.7907 25.0693 31.904 22.5973C31.9813 20.8907 32 20.3453 32 16C32 11.6547 31.9813 11.1093 31.904 9.40267C31.7907 6.92933 31.1013 4.472 29.3147 2.68533C27.524 0.894667 25.0627 0.208 22.5973 0.096C20.8907 0.0186667 20.3453 0 16 0Z"
+                            fill="white" />
+                        <path
+                            d="M15.9999 7.78418C11.4626 7.78418 7.78394 11.4628 7.78394 16.0002C7.78394 20.5375 11.4626 24.2162 15.9999 24.2162C20.5373 24.2162 24.2159 20.5375 24.2159 16.0002C24.2159 11.4628 20.5373 7.78418 15.9999 7.78418ZM15.9999 21.3335C13.0546 21.3335 10.6666 18.9455 10.6666 16.0002C10.6666 13.0548 13.0546 10.6668 15.9999 10.6668C18.9453 10.6668 21.3333 13.0548 21.3333 16.0002C21.3333 18.9455 18.9453 21.3335 15.9999 21.3335Z"
+                            fill="#222222" />
+                        <path
+                            d="M16 9C12.1342 9 9 12.1342 9 16C9 19.8658 12.1342 23 16 23C19.8658 23 23 19.8658 23 16C23 12.1342 19.8658 9 16 9ZM16 20.544C13.4906 20.544 11.456 18.5094 11.456 16C11.456 13.4906 13.4906 11.456 16 11.456C18.5094 11.456 20.544 13.4906 20.544 16C20.544 18.5094 18.5094 20.544 16 20.544Z"
+                            fill="#222222" />
+                        <path
+                            d="M25 9C26.1046 9 27 8.10457 27 7C27 5.89543 26.1046 5 25 5C23.8954 5 23 5.89543 23 7C23 8.10457 23.8954 9 25 9Z"
+                            fill="#222222" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        <div class="footer__copyright flex align__center justify__space__between">
+            © 2024 Premier Rest
+
+            <div class="footer__social__links__container flex adaptive">
+                <a href="#" class="footer__social__link telegram__link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                        <g clip-path="url(#clip0_598_3907)">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M16 0C7.164 0 0 7.164 0 16C0 24.836 7.164 32 16 32C24.836 32 32 24.836 32 16C32 7.164 24.836 0 16 0ZM23.416 10.8813C23.176 13.4107 22.1333 19.5507 21.604 22.384C21.38 23.584 20.9373 23.9853 20.5107 24.024C19.5813 24.1093 18.876 23.4093 17.976 22.82C16.568 21.8973 15.772 21.3227 14.4053 20.4213C12.8253 19.38 13.8493 18.808 14.7493 17.8733C14.9853 17.628 19.0787 13.904 19.1587 13.5667C19.168 13.524 19.1787 13.3667 19.084 13.284C18.9893 13.2013 18.852 13.2293 18.7533 13.252C18.612 13.284 16.3627 14.7707 12.004 17.712C11.3653 18.1507 10.7867 18.364 10.268 18.3533C9.69733 18.3413 8.59867 18.0307 7.78133 17.764C6.78 17.4387 5.98267 17.2653 6.052 16.7133C6.088 16.4253 6.484 16.1307 7.24133 15.8293C11.9053 13.7973 15.016 12.4573 16.572 11.8093C21.016 9.96133 21.9387 9.64 22.5413 9.62933C23.296 9.61867 23.4773 10.2413 23.416 10.8813Z"
+                                fill="white" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_598_3907">
+                                <rect width="32" height="32" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </a>
+
+                <a href="#" class="footer__social__link vk__link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                        <g clip-path="url(#clip0_598_3910)">
+                            <path
+                                d="M29.7547 2.24533C27.5093 0 23.8947 0 16.6667 0H15.3333C8.10533 0 4.49067 0 2.24533 2.24533C0 4.49067 0 8.10533 0 15.3333V16.6667C0 23.8947 0 27.508 2.24533 29.7547C4.49067 32.0013 8.10533 32 15.3333 32H16.6667C23.8947 32 27.508 32 29.7547 29.7547C32 27.5093 32 23.8947 32 16.6667V15.3333C32 8.10533 32 4.49067 29.7547 2.24533ZM26.004 22.6667H23.6707C22.7813 22.6667 22.52 21.9573 20.9373 20.3747C19.552 19.04 18.9587 18.8667 18.6133 18.8667C18.1427 18.8667 18.0027 19 18.0027 19.6667V21.7587C18.0027 22.332 17.82 22.6667 16.336 22.6667C13.864 22.6667 11.1467 21.1653 9.21733 18.3973C6.324 14.3427 5.53333 11.2773 5.53333 10.66C5.53333 10.3133 5.66667 10 6.33333 10H8.668C9.264 10 9.488 10.2613 9.712 10.9067C10.8533 14.2307 12.7787 17.136 13.5693 17.136C13.8653 17.136 14.0013 16.9987 14.0013 16.2467V12.8107C13.9147 11.2293 13.0733 11.0987 13.0733 10.536C13.0733 10.276 13.296 10 13.6667 10H17.3347C17.8293 10 18.0013 10.264 18.0013 10.8573V15.48C18.0013 15.9733 18.216 16.1467 18.364 16.1467C18.6613 16.1467 18.908 15.9733 19.452 15.4293C21.1333 13.5507 22.32 10.6587 22.32 10.6587C22.4693 10.312 22.7413 9.99867 23.336 9.99867H25.6693C26.3747 9.99867 26.524 10.3613 26.3747 10.856C26.0773 12.216 23.2347 16.22 23.2347 16.22C22.9867 16.616 22.888 16.8133 23.2347 17.2587C23.4827 17.6053 24.2973 18.2973 24.8413 18.94C25.844 20.068 26.6 21.0187 26.8107 21.6747C27.0053 22.3333 26.6707 22.6667 26.004 22.6667Z"
+                                fill="white" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_598_3910">
+                                <rect width="32" height="32" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </a>
+
+                <a href="#" class="footer__social__link inst__link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                        <rect width="32" height="32" rx="11" fill="white" />
+                        <path
+                            d="M16 2.88267C20.272 2.88267 20.7787 2.89867 22.4653 2.976C24.2093 3.056 26.0053 3.45333 27.276 4.724C28.5587 6.00667 28.944 7.78533 29.024 9.53467C29.1013 11.2213 29.1173 11.728 29.1173 16C29.1173 20.272 29.1013 20.7787 29.024 22.4653C28.9453 24.2 28.5387 26.0133 27.276 27.276C25.9933 28.5587 24.216 28.944 22.4653 29.024C20.7787 29.1013 20.272 29.1173 16 29.1173C11.728 29.1173 11.2213 29.1013 9.53467 29.024C7.81333 28.9453 5.976 28.5293 4.724 27.276C3.448 26 3.056 24.204 2.976 22.4653C2.89867 20.7787 2.88267 20.272 2.88267 16C2.88267 11.728 2.89867 11.2213 2.976 9.53467C3.05467 7.80667 3.46533 5.98267 4.724 4.724C6.004 3.444 7.78933 3.056 9.53467 2.976C11.2213 2.89867 11.728 2.88267 16 2.88267ZM16 0C11.6547 0 11.1093 0.0186667 9.40267 0.096C6.92933 0.209333 4.47333 0.897333 2.68533 2.68533C0.890667 4.48 0.209333 6.93067 0.096 9.40267C0.0186667 11.1093 0 11.6547 0 16C0 20.3453 0.0186667 20.8907 0.096 22.5973C0.209333 25.068 0.9 27.5307 2.68533 29.3147C4.47867 31.108 6.93333 31.7907 9.40267 31.904C11.1093 31.9813 11.6547 32 16 32C20.3453 32 20.8907 31.9813 22.5973 31.904C25.0693 31.7907 27.528 31.1013 29.3147 29.3147C31.1107 27.5187 31.7907 25.0693 31.904 22.5973C31.9813 20.8907 32 20.3453 32 16C32 11.6547 31.9813 11.1093 31.904 9.40267C31.7907 6.92933 31.1013 4.472 29.3147 2.68533C27.524 0.894667 25.0627 0.208 22.5973 0.096C20.8907 0.0186667 20.3453 0 16 0Z"
+                            fill="white" />
+                        <path
+                            d="M15.9999 7.78418C11.4626 7.78418 7.78394 11.4628 7.78394 16.0002C7.78394 20.5375 11.4626 24.2162 15.9999 24.2162C20.5373 24.2162 24.2159 20.5375 24.2159 16.0002C24.2159 11.4628 20.5373 7.78418 15.9999 7.78418ZM15.9999 21.3335C13.0546 21.3335 10.6666 18.9455 10.6666 16.0002C10.6666 13.0548 13.0546 10.6668 15.9999 10.6668C18.9453 10.6668 21.3333 13.0548 21.3333 16.0002C21.3333 18.9455 18.9453 21.3335 15.9999 21.3335Z"
+                            fill="#222222" />
+                        <path
+                            d="M16 9C12.1342 9 9 12.1342 9 16C9 19.8658 12.1342 23 16 23C19.8658 23 23 19.8658 23 16C23 12.1342 19.8658 9 16 9ZM16 20.544C13.4906 20.544 11.456 18.5094 11.456 16C11.456 13.4906 13.4906 11.456 16 11.456C18.5094 11.456 20.544 13.4906 20.544 16C20.544 18.5094 18.5094 20.544 16 20.544Z"
+                            fill="#222222" />
+                        <path
+                            d="M25 9C26.1046 9 27 8.10457 27 7C27 5.89543 26.1046 5 25 5C23.8954 5 23 5.89543 23 7C23 8.10457 23.8954 9 25 9Z"
+                            fill="#222222" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper@10/swiper-bundle.min.js"></script>
+    <script type="module" src="JS/pages/homePage/gallerySwiper.js"></script>
+    <script type="module" src="/JS/phoneMask.js"></script>
+    <script type="module" src="/JS/textOnlyInput.js"></script>
+    <script type="module" src="/JS/requestFormValidator.js"></script>
+    <script type="module" src="/JS/getPopup.js"></script>
+    <script type="module" src="/JS/pages/homePage/animations.js"></script>
+</body>
+
+</html>
