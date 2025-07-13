@@ -30,8 +30,8 @@ animations.transformScaleY(interiorSection, '.interior__image__container')
 animations.transformToRight(eventsSection, '.event__card__1')
 animations.transformToLeft(eventsSection, '.event__card__2')
 
-animations.transformScaleYLazy(gallerySection, '.gallery__section__title__container .block__title')
+
+animations.transformScaleYLazy(document.querySelector('.gallery__section__title__container'), '.gallery__section__title__container .block__title')
 animations.transformFromBottom(gallerySection, '.gallery__swiper__container')
 
-animations.transformFromBottom(requestSection, '.gallery__section__title')
 animations.transformScaleX(requestSection, '.request__form')

@@ -65,11 +65,11 @@
 
                 <li class="not__link flex column">
                     <span class="block__title text__uppercase">Локация</span>
-                    <span class="contacts__popup__container flex align__center">
+                    <a href="tel:+74712542054" class="contacts__popup__container flex align__center">
                         <span class="contacts__popup__name">
                             Телефон: &nbsp;
                         </span> <span class="contacts__popup__value">+7 4712 54 20 54</span>
-                    </span>
+                    </a>
                 </li>
             </ul>
         </div>
@@ -78,7 +78,7 @@
     <header class="landing__header flex justify__space__between align__center">
         <div class="header__geo__container flex column desktop">
             <span class="header__geo button">г. Курск, ул. Невского 23А</span>
-            <a href="tel:" class="header__phone__number button">+7 (4712) 54 20 54</a>
+            <a href="tel:+74712542054" class="header__phone__number button">+7 (4712) 54 20 54</a>
         </div>
 
         <a href="#" class="header__logo">
@@ -91,7 +91,8 @@
                 забронировать столик
             </a>
 
-            <button type="button" data-popup-id="landing__popup__menu" class="header__burger__menu__bttn get__popup__button theme__white__bttn theme__button">
+            <button type="button" data-popup-id="landing__popup__menu"
+                class="header__burger__menu__bttn get__popup__button theme__white__bttn theme__button">
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
                     <path d="M4.5 25.5H27.5M4.5 16H27.5M4.5 6.5H27.5" stroke="white" stroke-width="2"
                         stroke-linecap="round" stroke-linejoin="round" />
@@ -120,11 +121,21 @@
                     Ресторан, объединяющий кухни разных стран мира. Здесь классические рецепты дополняются
                     современными идеями, создавая яркие и запоминающиеся вкусы.
                 </span>
+
+                <a href="#" class="desktop delivery__button text__uppercase flex align__center justify__center">
+                    Заказать доставку
+                </a>
             </span>
 
-            <a href="#" class="adaptive reserve__button theme__button theme__white__bttn text__uppercase button">
-                забронировать столик
-            </a>
+
+            <div class="flex column align__center started__section__adaptive__buttons__container">
+                <a href="#" class="adaptive delivery__button text__uppercase flex align__center justify__center">
+                    Заказать доставку
+                </a>
+                <a href="#" class="adaptive reserve__button theme__button theme__white__bttn text__uppercase button">
+                    забронировать столик
+                </a>
+            </div>
         </div>
 
         <div class="started__section__about__scroll">
@@ -177,7 +188,8 @@
                         alt="Banquets menu first image" />
                 </div>
 
-                <div class="banquets__about__menu__ui__container flex column align__center" id="banquets__about__section">
+                <div class="banquets__about__menu__ui__container flex column align__center"
+                    id="banquets__about__section">
                     <div class="banquets__about__menu__text__container flex column align__center">
                         <div class="banquets__about__menu__title__container flex column align__center">
                             <div class="website__logo">
@@ -225,7 +237,8 @@
                         </span>
                     </div>
 
-                    <a href="#" class="banquets__section__link animate__link flex align__center button text__uppercase">
+                    <a href="#request__section"
+                        class="banquets__section__link animate__link flex align__center button text__uppercase">
                         забронировать столик <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 9" fill="none"
                             preserveAspectRatio="none">
                             <path
@@ -456,17 +469,19 @@
                             </span>
 
                             <div class="about__us__description__container">
-                                <div class="about__us__description__text__container flex align__center">
+                                <a href="tel:+74712542054"
+                                    class="about__us__description__text__container flex align__center">
                                     <span class="about__us__name">Телефон:</span>
                                     &nbsp;
                                     <span class="about__us__value">+7 4712 54 20 54</span>
-                                </div>
+                                </a>
 
-                                <div class="about__us__description__text__container flex align__center">
+                                <a href="mailto:primier46@yandex.ru"
+                                    class="about__us__description__text__container flex align__center">
                                     <span class="about__us__name">Почта:</span>
                                     &nbsp;
                                     <span class="about__us__value">primier46@yandex.ru</span>
-                                </div>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -543,7 +558,8 @@
                     <input required type="text" class="request__input text__only__input" placeholder="Ваше имя" />
                     <input required type="text" class="request__input phone__number__input"
                         placeholder="Номер телефона" />
-                    <textarea required class="request__input" placeholder="Комментарий"></textarea>
+                    <textarea required class="request__input limited__input" maxlength="500"
+                        placeholder="Комментарий"></textarea>
                     <input value="Неправильный ввод" readonly type="text" class="error__input" />
                 </div>
 
@@ -661,7 +677,7 @@
         </div>
 
         <div class="footer__copyright flex align__center justify__space__between">
-            © 2024 Premier Rest
+            © 2025 Premier Rest
 
             <div class="footer__social__links__container flex adaptive">
                 <a href="#" class="footer__social__link telegram__link">

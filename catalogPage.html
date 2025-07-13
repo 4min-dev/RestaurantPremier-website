@@ -123,14 +123,15 @@
             </div>
         </header>
 
-        <div class="popup__overlay flex column align__center justify__center"
-            id="catalog__delivery__popup__overlay" data-id="delivery__popup">
+        <div class="popup__overlay flex column align__center justify__center" id="catalog__delivery__popup__overlay"
+            data-id="delivery__popup">
             <div class="popup__stage addresses__stage" id="order__popup__payment__addresses__stage" data-id="6"
                 data-stage="payment__addresses__stage">
                 <div class="popup flex align__center" id="order__popup">
                     <div class="order__popup__container flex column">
                         <div class="order__popup__addresses__stage__heading flex align__center">
-                            <button class="return__prev__stage__button close__popup__button flex align__center justify__center">
+                            <button
+                                class="return__prev__stage__button close__popup__button flex align__center justify__center">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                     fill="none">
                                     <g opacity="0.6" clip-path="url(#clip0_777_1406)">
@@ -342,7 +343,8 @@
                                         Квартира
                                     </span>
 
-                                    <input type="number" class="appartment__input named__input number__input"
+                                    <input type="number" maxlength="5"
+                                        class="appartment__input named__input number__input limited__input"
                                         placeholder="Квартира" />
                                 </div>
 
@@ -351,7 +353,8 @@
                                         Подъезд
                                     </span>
 
-                                    <input type="number" class="named__input number__input" placeholder="Подъезд" />
+                                    <input type="number" class="named__input number__input limited__input" maxlength="5"
+                                        placeholder="Подъезд" />
                                 </div>
 
                                 <div class="named__input__container flex column">
@@ -359,7 +362,8 @@
                                         Домофон
                                     </span>
 
-                                    <input type="number" class="named__input number__input" placeholder="Домофон" />
+                                    <input type="number" class="named__input number__input limited__input" maxlength="5"
+                                        placeholder="Домофон" />
                                 </div>
 
                                 <div class="named__input__container flex column">
@@ -367,7 +371,8 @@
                                         Этаж
                                     </span>
 
-                                    <input type="number" class="named__input number__input" placeholder="Этаж" />
+                                    <input type="number" class="named__input number__input limited__input" maxlength="5"
+                                        placeholder="Этаж" />
                                 </div>
 
                                 <div class="named__input__container flex column">
@@ -1387,7 +1392,8 @@
                                             stroke-linecap="round" stroke-linejoin="round" />
                                     </svg>
 
-                                    <div class="cart__popup__block__card__text__content flex column align__start justify__start">
+                                    <div
+                                        class="cart__popup__block__card__text__content flex column align__start justify__start">
                                         <span class="block__card__description">
                                             Доставим из Курска
                                         </span>
@@ -1631,24 +1637,29 @@
                                 </label>
                             </button>
 
-                            <button class="cart__popup__block__card flex align__center justify__space__between adaptive">
+                            <button
+                                class="cart__popup__block__card flex align__center justify__space__between adaptive">
                                 <div class="cart__popup__block__card__text__container flex align__center">
 
                                     <div class="cart__popup__block__card__text__content flex column">
                                         <span class="block__card__title flex align__center">
                                             <span class="points__amount__block__card flex align__center adaptive">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                                    <path d="M19 6.5C19 7.88071 15.866 9 12 9C8.13401 9 5 7.88071 5 6.5C5 5.11929 8.13401 4 12 4C15.866 4 19 5.11929 19 6.5Z" fill="#DFA261"/>
-                                                    <path d="M19 6.5C19 7.88071 15.866 9 12 9C8.13401 9 5 7.88071 5 6.5M19 6.5C19 5.11929 15.866 4 12 4C8.13401 4 5 5.11929 5 6.5M19 6.5V18.5C19 19.8807 15.866 21 12 21C8.13401 21 5 19.8807 5 18.5V6.5M19 10.5C19 11.8807 15.866 13 12 13C8.13401 13 5 11.8807 5 10.5M19 14.5C19 15.8807 15.866 17 12 17C8.13401 17 5 15.8807 5 14.5" stroke="#DFA261" stroke-width="1.8"/>
-                                                    </svg>
-                
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none">
+                                                    <path
+                                                        d="M19 6.5C19 7.88071 15.866 9 12 9C8.13401 9 5 7.88071 5 6.5C5 5.11929 8.13401 4 12 4C15.866 4 19 5.11929 19 6.5Z"
+                                                        fill="#DFA261" />
+                                                    <path
+                                                        d="M19 6.5C19 7.88071 15.866 9 12 9C8.13401 9 5 7.88071 5 6.5M19 6.5C19 5.11929 15.866 4 12 4C8.13401 4 5 5.11929 5 6.5M19 6.5V18.5C19 19.8807 15.866 21 12 21C8.13401 21 5 19.8807 5 18.5V6.5M19 10.5C19 11.8807 15.866 13 12 13C8.13401 13 5 11.8807 5 10.5M19 14.5C19 15.8807 15.866 17 12 17C8.13401 17 5 15.8807 5 14.5"
+                                                        stroke="#DFA261" stroke-width="1.8" />
+                                                </svg>
+
                                                 <span class="text__container flex align__center">
                                                     <span>
                                                         1347
                                                     </span> баллов
-                                                </span
+                                                </span </span>
                                             </span>
-                                        </span>
                                     </div>
                                 </div>
 
@@ -1779,7 +1790,8 @@
                 </div>
 
                 <div class="profile__main__links__container flex column">
-                    <button type="button" data-popup-id="cart__popup" class="profile__link__card get__popup__button flex align__center">
+                    <button type="button" data-popup-id="cart__popup"
+                        class="profile__link__card get__popup__button flex align__center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
                             <g clip-path="url(#clip0_515_9867)">
                                 <path
@@ -1801,7 +1813,8 @@
                         </span>
                     </button>
 
-                    <button type="button" data-popup-id="notifications__popup" class="profile__link__card get__popup__button flex align__center">
+                    <button type="button" data-popup-id="notifications__popup"
+                        class="profile__link__card get__popup__button flex align__center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
                             <path
                                 d="M5.15007 17.0168L5.60449 16.5623C5.75111 16.4157 5.83366 16.2169 5.83366 16.0095V11.6667C5.83366 7.15635 9.49001 3.50001 14.0003 3.5C18.5107 3.49999 22.167 7.15633 22.167 11.6667V16.0095C22.167 16.2168 22.2494 16.4157 22.396 16.5623L22.8504 17.0168C22.9892 17.1556 23.0596 17.226 23.115 17.3031C23.2198 17.4491 23.2886 17.6172 23.3177 17.7945C23.3331 17.8884 23.3333 17.9868 23.3333 18.1836C23.3333 18.6334 23.3333 18.8583 23.2721 19.0397C23.1557 19.3849 22.8856 19.6559 22.5404 19.7724C22.3597 19.8333 22.1355 19.8333 21.6892 19.8333H17.5003V21C17.5003 22.933 15.9333 24.5 14.0003 24.5C12.0673 24.5 10.5003 22.933 10.5003 21V19.8333H6.31147C5.86518 19.8333 5.64181 19.8333 5.4611 19.7724C5.11592 19.6559 4.84462 19.3849 4.72819 19.0397C4.66699 18.8583 4.66699 18.6334 4.66699 18.1836C4.66699 17.9868 4.66699 17.8884 4.68239 17.7945C4.7115 17.6172 4.78092 17.4491 4.88574 17.3031C4.94121 17.2259 5.01088 17.1559 5.15007 17.0168Z"
@@ -1817,7 +1830,8 @@
                         </span>
                     </button>
 
-                    <button type="button" data-popup-id="delivery__popup" class="profile__link__card get__popup__button flex align__center">
+                    <button type="button" data-popup-id="delivery__popup"
+                        class="profile__link__card get__popup__button flex align__center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
                             <g clip-path="url(#clip0_515_9873)">
                                 <path
@@ -3364,7 +3378,8 @@
                                         Квартира
                                     </span>
 
-                                    <input type="number" class="appartment__input named__input number__input"
+                                    <input maxlength="5" type="number"
+                                        class="appartment__input named__input number__input limited__input"
                                         placeholder="Квартира" />
                                 </div>
 
@@ -3373,7 +3388,8 @@
                                         Подъезд
                                     </span>
 
-                                    <input type="number" class="named__input number__input" placeholder="Подъезд" />
+                                    <input type="number" maxlength="5" class="limited__input named__input number__input"
+                                        placeholder="Подъезд" />
                                 </div>
 
                                 <div class="named__input__container flex column">
@@ -3381,7 +3397,8 @@
                                         Домофон
                                     </span>
 
-                                    <input type="number" class="named__input number__input" placeholder="Домофон" />
+                                    <input type="number" maxlength="5" class="limited__input named__input number__input"
+                                        placeholder="Домофон" />
                                 </div>
 
                                 <div class="named__input__container flex column">
@@ -3389,7 +3406,8 @@
                                         Этаж
                                     </span>
 
-                                    <input type="number" class="named__input number__input" placeholder="Этаж" />
+                                    <input type="number" maxlength="5" class="limited__input named__input number__input"
+                                        placeholder="Этаж" />
                                 </div>
 
                                 <div class="named__input__container flex column">
@@ -3642,7 +3660,8 @@
                     </div>
                 </div>
                 <div class="delivery__user__container flex align__center justify__space__between">
-                    <button data-popup-id="delivery__popup" type="button" class="delivery__user__content get__popup__button flex align__center justify__space__between">
+                    <button data-popup-id="delivery__popup" type="button"
+                        class="delivery__user__content get__popup__button flex align__center justify__space__between">
                         <div class="delivery__user__address__content flex align__center">
                             <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28"
                                 fill="none">
@@ -3734,56 +3753,58 @@
                 </a>
 
                 <aside class="catalog__aside__panel catalog__aside__panel__mob flex column adaptive">
-    <span class="aside__panel__title">
-        <span class="flex align__center justify__space__between">Меню ресторана
-            <div class="menu__icon__container flex align__center justify__center">
-                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
-                    <g clip-path="url(#clip0_715_4714)">
-                        <path d="M8.1665 11.6667L13.9998 17.5001L19.8332 11.6667" stroke="#222222" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" />
-                    </g>
-                    <defs>
-                        <clipPath id="clip0_715_4714">
-                            <rect width="28" height="28" fill="white" />
-                        </clipPath>
-                    </defs>
-                </svg>
-            </div>
-        </span>
-    </span>
-    <ul class="aside__panel__navbar__mob flex column">
-        <li class="filter__name active">
-            <span class="filter__name__title">Новинки</span>
-        </li>
-        <li class="filter__name">
-            <span class="filter__name__title">Популярное</span>
-        </li>
-        <li class="filter__name">
-            <span class="filter__name__title has-options">Японская кухня</span>
-            <ul class="aside__panel__options flex column">
-                <li class="filter__name__title">Суши</li>
-                <li class="filter__name__title">Роллы</li>
-                <li class="filter__name__title">Сашими</li>
-                <li class="filter__name__title">Темпура</li>
-                <li class="filter__name__title">Рамен</li>
-                <li class="filter__name__title">Другие блюда</li>
-            </ul>
-        </li>
-        <li class="filter__name">
-            <span class="filter__name__title">Пицца</span>
-        </li>
-        <li class="filter__name">
-            <span class="filter__name__title">Завтраки</span>
-        </li>
-    </ul>
-</aside>
+                    <span class="aside__panel__title">
+                        <span class="flex align__center justify__space__between">Меню ресторана
+                            <div class="menu__icon__container flex align__center justify__center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28"
+                                    fill="none">
+                                    <g clip-path="url(#clip0_715_4714)">
+                                        <path d="M8.1665 11.6667L13.9998 17.5001L19.8332 11.6667" stroke="#222222"
+                                            stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_715_4714">
+                                            <rect width="28" height="28" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                        </span>
+                    </span>
+                    <ul class="aside__panel__navbar__mob flex column">
+                        <li class="filter__name active">
+                            <span class="filter__name__title">Новинки</span>
+                        </li>
+                        <li class="filter__name">
+                            <span class="filter__name__title">Популярное</span>
+                        </li>
+                        <li class="filter__name">
+                            <span class="filter__name__title has-options">Японская кухня</span>
+                            <ul class="aside__panel__options flex column">
+                                <li class="filter__name__title">Суши</li>
+                                <li class="filter__name__title">Роллы</li>
+                                <li class="filter__name__title">Сашими</li>
+                                <li class="filter__name__title">Темпура</li>
+                                <li class="filter__name__title">Рамен</li>
+                                <li class="filter__name__title">Другие блюда</li>
+                            </ul>
+                        </li>
+                        <li class="filter__name">
+                            <span class="filter__name__title">Пицца</span>
+                        </li>
+                        <li class="filter__name">
+                            <span class="filter__name__title">Завтраки</span>
+                        </li>
+                    </ul>
+                </aside>
 
                 <div class="catalog__menu__container flex column">
                     <div class="catalog__menu__block flex column">
                         <span class="catalog__menu__block__title">Новинки</span>
 
                         <div class="catalog__menu__cards__container grid">
-                            <div class="catalog__menu__card justify__space__between get__popup__button flex column" data-id="1"
-                                data-price="1937" data-popup-id="order__popup"
+                            <div class="catalog__menu__card justify__space__between get__popup__button flex column"
+                                data-id="1" data-price="1937" data-popup-id="order__popup"
                                 data-description="Тесто собственного приготовления, тесто, груша, сыр горгонзола, моцарелла, грецкий орех, мед, руккола."
                                 data-composition='{"ккал": 66547, "белки": 72, "жиры": 44, "углеводы": 186}'>
 
@@ -3830,8 +3851,8 @@
                                 </div>
                             </div>
 
-                            <div class="catalog__menu__card justify__space__between get__popup__button flex column" data-id="2"
-                                data-price="2490" data-popup-id="order__popup"
+                            <div class="catalog__menu__card justify__space__between get__popup__button flex column"
+                                data-id="2" data-price="2490" data-popup-id="order__popup"
                                 data-description="Сочный стейк из говядины с гарниром из свежих овощей и ароматным соусом."
                                 data-composition='{"ккал": 950, "белки": 62, "жиры": 50, "углеводы": 30}'>
 
@@ -3876,8 +3897,8 @@
                                 </div>
                             </div>
 
-                            <div class="catalog__menu__card justify__space__between get__popup__button flex column" data-id="3" data-price="950"
-                                data-popup-id="order__popup"
+                            <div class="catalog__menu__card justify__space__between get__popup__button flex column"
+                                data-id="3" data-price="950" data-popup-id="order__popup"
                                 data-description="Салат из свежей зелени с авокадо, помидорами черри и лёгким йогуртовым соусом."
                                 data-composition='{"ккал": 350, "белки": 8, "жиры": 22, "углеводы": 20}'>
 
@@ -3922,8 +3943,8 @@
                                 </div>
                             </div>
 
-                            <div class="catalog__menu__card justify__space__between get__popup__button flex column" data-id="4"
-                                data-price="1350" data-popup-id="order__popup"
+                            <div class="catalog__menu__card justify__space__between get__popup__button flex column"
+                                data-id="4" data-price="1350" data-popup-id="order__popup"
                                 data-description="Итальянская пицца с ветчиной, шампиньонами, сыром моцарелла и соусом на томатной основе."
                                 data-composition='{"ккал": 1200, "белки": 36, "жиры": 50, "углеводы": 130}'>
 
@@ -3969,8 +3990,8 @@
                                 </div>
                             </div>
 
-                            <div class="catalog__menu__card justify__space__between get__popup__button flex column" data-id="5" data-price="750"
-                                data-popup-id="order__popup"
+                            <div class="catalog__menu__card justify__space__between get__popup__button flex column"
+                                data-id="5" data-price="750" data-popup-id="order__popup"
                                 data-description="Крем-суп из тыквы с добавлением сливок и поджаренными тыквенными семечками."
                                 data-composition='{"ккал": 450, "белки": 10, "жиры": 25, "углеводы": 40}'>
 
@@ -4112,7 +4133,7 @@
             <div class="flex justify__space__between desktop">
                 <div class="footer__copyright__container">
                     <ul class="flex">
-                        <li>© 2024</li>
+                        <li>© 2025</li>
 
                         <li>
                             <a href="#">Оферта</a>
@@ -4141,7 +4162,7 @@
 
                 <div class="footer__author__container">
                     <ul class="flex align__center">
-                        <li>© 2024</li>
+                        <li>© 2025</li>
 
                         <li>
                             <a href="#">Оферта</a>
@@ -4184,6 +4205,7 @@
     <script type="module" src="/JS/asidePanelFilters.js"></script>
     <script type="module" src="/JS/deliveryAddressPopup.js"></script>
     <script type="module" src="/JS/cartPopupButtons.js"></script>
+    <script type="module" src="/JS/maxLengthFix.js"></script>
 </body>
 
 </html>

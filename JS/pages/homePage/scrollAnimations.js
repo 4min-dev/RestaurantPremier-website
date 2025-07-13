@@ -1,4 +1,4 @@
-import Animations from "../../../JS/animations/animations.js"
+import Animations from "./animations.js"
 const animation = new Animations()
 
 const started__section = document.getElementById('started__section__main__page')

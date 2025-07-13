@@ -7,20 +7,12 @@ function initializeSwiper() {
         spaceBetween: 0,
         touchStartPreventDefault: false,
         touchMoveStopPropagation: false,
+        slidesPerView: "auto",
         pagination: {
             el: '.swiper-pagination',
             clickable: true,
             bulletClass: 'swiper-pagination-bullet',
             bulletActiveClass: 'swiper-pagination-bullet-active',
-        },
-        breakpoints: {
-            1025: {
-                slidesPerView: 5
-            },
-
-            0: {
-                slidesPerView: 1.3
-            },
         },
     });
 

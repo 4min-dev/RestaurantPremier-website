@@ -1,6 +1,5 @@
 function debounce(func, ms) {
     let timeout
-
     return function () {
         clearTimeout(timeout)
         timeout = setTimeout(() => func.apply(this, arguments), ms)
@@ -11,13 +10,17 @@ ymaps.ready(init)
 
 function init() {
     const ymapContainers = document.querySelectorAll('.ymap__container')
-
     if (!ymapContainers.length) {
         console.error("Контейнеры для карт не найдены.")
         return
     }
 
-    // Функция для получения геолокации пользователя
+    const kurskBounds = [
+        [51.609, 36.058], // Юго-запад Курска
+        [51.811, 36.318]  // Северо-восток Курска
+    ]
+    const kurskCenter = [51.730, 36.193] // Центр Курска
+
     function getUserLocation() {
         return new Promise((resolve, reject) => {
             if (!navigator.geolocation) {
@@ -25,7 +28,14 @@ function init() {
             } else {
                 navigator.geolocation.getCurrentPosition(
                     (position) => {
-                        resolve([position.coords.latitude, position.coords.longitude])
+                        const coords = [position.coords.latitude, position.coords.longitude]
+                        // Проверка, находится ли пользователь в пределах Курска
+                        if (coords[0] >= kurskBounds[0][0] && coords[0] <= kurskBounds[1][0] &&
+                            coords[1] >= kurskBounds[0][1] && coords[1] <= kurskBounds[1][1]) {
+                            resolve(coords)
+                        } else {
+                            resolve(kurskCenter) // Если вне Курска, возвращаем центр Курска
+                        }
                     },
                     (error) => {
                         reject(`Ошибка при получении геолокации: ${error.message}`)
@@ -46,7 +56,8 @@ function init() {
                 const myMap = new ymaps.Map(container, {
                     center: userCoords,
                     zoom: 15,
-                    controls: []
+                    controls: [],
+                    restrictMapArea: kurskBounds // Ограничение области карты Курском
                 })
 
                 myMap.controls.remove('geolocationControl')
@@ -65,16 +76,22 @@ function init() {
                 })
                 myMap.geoObjects.add(customCursor)
 
-                // Функция геокодирования адреса и обновления карты
                 const geocodeAddressAndUpdateMap = async (address) => {
                     try {
-                        const res = await ymaps.geocode(address)
+                        const res = await ymaps.geocode(`Курск, ${address}`)
                         const firstGeoObject = res.geoObjects.get(0)
                         if (firstGeoObject) {
                             const coords = firstGeoObject.geometry.getCoordinates()
-                            myMap.setCenter(coords)
-                            customCursor.geometry.setCoordinates(coords)
-                            addressInputPlaceholder.classList.add('translated')
+                            // Проверка, что координаты находятся в пределах Курска
+                            if (coords[0] >= kurskBounds[0][0] && coords[0] <= kurskBounds[1][0] &&
+                                coords[1] >= kurskBounds[0][1] && coords[1] <= kurskBounds[1][1]) {
+                                myMap.setCenter(coords)
+                                customCursor.geometry.setCoordinates(coords)
+                                addressInputPlaceholder.classList.add('translated')
+                            } else {
+                                myMap.setCenter(coords)
+                                alert("Адрес находится за пределами Курска.")
+                            }
                         } else {
                             console.warn("Адрес не найден.")
                         }
@@ -96,32 +113,37 @@ function init() {
 
                 addressInput.addEventListener('input', handleAddressInput)
 
-                // Перемещение курсора при клике по карте
                 myMap.events.add('click', (e) => {
                     const coords = e.get("coords")
-                    customCursor.geometry.setCoordinates(coords)
-
-                    ymaps.geocode(coords).then((res) => {
-                        const firstGeoObject = res.geoObjects.get(0)
-                        if (firstGeoObject) {
-                            addressInput.value = firstGeoObject.getAddressLine()
-                            addressInputPlaceholder.classList.add('translated')
-                        }
-                    })
+                    if (coords[0] >= kurskBounds[0][0] && coords[0] <= kurskBounds[1][0] &&
+                        coords[1] >= kurskBounds[0][1] && coords[1] <= kurskBounds[1][1]) {
+                        customCursor.geometry.setCoordinates(coords)
+                        ymaps.geocode(coords).then((res) => {
+                            const firstGeoObject = res.geoObjects.get(0)
+                            if (firstGeoObject) {
+                                addressInput.value = firstGeoObject.getAddressLine()
+                                addressInputPlaceholder.classList.add('translated')
+                            }
+                        })
+                    }
                 })
 
-                // Центрирование курсора при перемещении карты
                 myMap.events.add('actionend', () => {
                     const center = myMap.getCenter()
-                    customCursor.geometry.setCoordinates(center)
-
-                    ymaps.geocode(center).then((res) => {
-                        const firstGeoObject = res.geoObjects.get(0)
-                        if (firstGeoObject) {
-                            addressInput.value = firstGeoObject.getAddressLine()
-                            addressInputPlaceholder.classList.add('translated')
-                        }
-                    })
+                    if (center[0] >= kurskBounds[0][0] && center[0] <= kurskBounds[1][0] &&
+                        center[1] >= kurskBounds[0][1] && center[1] <= kurskBounds[1][1]) {
+                        customCursor.geometry.setCoordinates(center)
+                        ymaps.geocode(center).then((res) => {
+                            const firstGeoObject = res.geoObjects.get(0)
+                            if (firstGeoObject) {
+                                addressInput.value = firstGeoObject.getAddressLine()
+                                addressInputPlaceholder.classList.add('translated')
+                            }
+                        })
+                    } else {
+                        myMap.setCenter(kurskCenter)
+                        customCursor.geometry.setCoordinates(kurskCenter)
+                    }
 
                     if (!clearButton.classList.contains('visible')) {
                         clearButton.classList.add('visible')
@@ -132,15 +154,14 @@ function init() {
             })
             .catch((error) => {
                 console.error(error)
-                // Если геолокация недоступна, используем дефолтные корды
-                const defaultCoords = [55.751244, 37.618423] // Корды Москвы, можно будет поменять на любой другой город
                 const myMap = new ymaps.Map(container, {
-                    center: defaultCoords,
+                    center: kurskCenter,
                     zoom: 10,
-                    controls: []
+                    controls: [],
+                    restrictMapArea: kurskBounds
                 })
 
-                const customCursor = new ymaps.Placemark(defaultCoords, {}, {
+                const customCursor = new ymaps.Placemark(kurskCenter, {}, {
                     iconLayout: 'default#image',
                     iconImageHref: '../static/img/gps.png',
                     iconImageSize: [30, 42],
